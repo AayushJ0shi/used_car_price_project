@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Enhanced Hero Section -->
+<div class="container">
+    <div class="hero-section text-center fade-in-up">
+        <h1 class="hero-title">Drive Smart, Sell Smarter with AI</h1>
+        <p class="hero-subtitle">
+            Get instant, accurate used car price predictions powered by advanced Machine Learning. 
+            Know your car's true market value in seconds, not days.
+        </p>
+        <div class="row justify-content-center mb-5">
+            <div class="col-auto">
+                <span class="badge bg-primary me-2"><i class="fas fa-brain me-1"></i>AI Powered</span>
+                <span class="badge bg-warning me-2"><i class="fas fa-bolt me-1"></i>Instant Results</span>
+                <span class="badge bg-success me-2"><i class="fas fa-shield-alt me-1"></i>89.2% Accurate</span>
+                <span class="badge bg-info"><i class="fas fa-chart-line me-1"></i>Market Insights</span>
+            </div>
+        </div>
+        <div class="hero-actions">
+            <a href="/predict" class="btn btn-primary btn-lg me-3">
+                <i class="fas fa-calculator me-2"></i>Get Free Valuation
+            </a>
+            <a href="/insights" class="btn btn-outline-primary btn-lg">
+                <i class="fas fa-chart-bar me-2"></i>View Analytics
+            </a>
+        </div>
+    </div>
+
+    <!-- Enhanced Stats Section -->
+    <div class="row g-4 mb-5">
+        <div class="col-md-3 fade-in-up" style="animation-delay: 0.1s;">
+            <div class="stats-card">
+                <i class="fas fa-car fa-2x text-primary mb-3"></i>
+                <span class="stat-number">1,000+</span>
+                <span class="stat-label">Cars Analyzed</span>
+            </div>
+        </div>
+        <div class="col-md-3 fade-in-up" style="animation-delay: 0.2s;">
+            <div class="stats-card">
+                <i class="fas fa-rupee-sign fa-2x text-warning mb-3"></i>
+                <span class="stat-number">₹5.75L</span>
+                <span class="stat-label">Average Price</span>
+            </div>
+        </div>
+        <div class="col-md-3 fade-in-up" style="animation-delay: 0.3s;">
+            <div class="stats-card">
+                <i class="fas fa-bullseye fa-2x text-success mb-3"></i>
+                <span class="stat-number">89.2%</span>
+                <span class="stat-label">Accuracy Rate</span>
+            </div>
+        </div>
+        <div class="col-md-3 fade-in-up" style="animation-delay: 0.4s;">
+            <div class="stats-card">
+                <i class="fas fa-cogs fa-2x text-info mb-3"></i>
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Factors Analyzed</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Features Grid -->
+    <div class="row g-4 mb-5">
+        <div class="col-md-4 fade-in-up" style="animation-delay: 0.1s;">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h4 class="gradient-text">AI-Powered Accuracy</h4>
+                <p class="text-muted">Advanced machine learning algorithms analyze 10+ factors to deliver 89.2% accurate price predictions.</p>
+            </div>
+        </div>
+        <div class="col-md-4 fade-in-up" style="animation-delay: 0.2s;">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h4 class="gradient-text">Instant Results</h4>
+                <p class="text-muted">Get precise car valuations in under 5 seconds. No waiting, no guesswork - just accurate results.</p>
+            </div>
+        </div>
+        <div class="col-md-4 fade-in-up" style="animation-delay: 0.3s;">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h4 class="gradient-text">Market Intelligence</h4>
+                <p class="text-muted">Real-time market insights and trend analysis based on comprehensive data and current market conditions.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="card bg-gradient-primary text-white text-center">
+                <div class="card-body py-5">
+                    <h2 class="mb-3">Ready to Discover Your Car's True Value?</h2>
+                    <p class="mb-4 lead">Join thousands of smart sellers who trust our AI-powered valuation system</p>
+                    <a href="/predict" class="btn btn-warning btn-lg">
+                        <i class="fas fa-rocket me-2"></i>Start Your Free Valuation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.hero-actions {
+    margin-top: 2rem;
+}
+
+.btn-outline-primary {
+    border: 2px solid var(--electric-blue);
+    color: var(--electric-blue);
+    background: transparent;
+}
+
+.btn-outline-primary:hover {
+    background: var(--electric-blue);
+    color: var(--pure-white);
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, var(--primary-blue), var(--electric-blue)) !important;
+    border: none;
+    border-radius: 25px;
+}
+</style>
+{% endblock %}

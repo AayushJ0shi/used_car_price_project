@@ -1,0 +1,8 @@
+total_cars: 15411
+avg_price: 774971.12
+avg_age: 6.0
+avg_km: 55616
+most_common_brand: Maruti
+most_common_fuel: Petrol
+best_model: Random Forest
+best_accuracy: 93.3
